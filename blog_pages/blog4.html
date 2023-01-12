@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>David's Blog</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='author' content="David Ezeude">
+    <meta name='keywords' content="blog, personal, portfolio, projects">
+    <link rel="icon" href="/images/logo.png" type="image/icon type">
+    <link rel="stylesheet" type ='text/css' href="/style.css">
+    <script src="https://kit.fontawesome.com/bff889b153.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navigation bar start -->
+    <nav id='nav' class = 'navBar'>
+        <div class='max-width'>
+            <a href='index.html' class='logo'>
+                <img src='images/logo.png'></img>
+                Portfo<span>lio.</span>
+            </a>
+                <a href='#about' class='skip-bar'>Skip Navigation</a>
+                <ul class='menu'>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <!-- <li><a href="Blog.html">Blog</a></li> -->
+                    <!-- Blog Coming Soon! -->
+                </ul>
+                <div id='mBtn' class='menu-btn' onclick="menuClick()">
+                    <i id='mBtn-img' class="fas fa-bars"></i>
+                </div>  
+        </div>
+    </nav>
+
+
+    <section class="post">
+        <div class="max-width">
+            <h2 class="title">OpenGL</h2>
+            <div class="post-content">
+                <div class="img"></div>
+                <p>
+                        Above, is a picture of an OpenGL quad, consisting of 2 triangles and a minecraft grass block texture with some other coloring texture.
+                        Behind the window, is my fragment shader in the Eclipse IDE.
+                        The reason I wanted to learn OpenGL is because I wanted to learn more about 3D graphics and rendering.
+                        My goal is to learn enough OpenGL to the point where I can make my own game and/or game engine from scratch.
+                        The reason I'm not using a game engine is because I want to actually understand what goes on behind the scenes
+                        in software and the GPU when a 3D game is running. I've been learning OpenGL mostly from <a href="https://learnopengl.com/">learnopengl,</a>
+                        and it has been an exciting and fulfilling experience. The biggest challenge I have though, is that the website is taught using C++,
+                        but I'm using Java. You would think that this wasn't a big deal, but the OpenGL API is different in both langauges, for example in the C++ API,
+                        pointers are used as parameters and the method/function will change the values of those variables, but Java is call by value, not call by reference,
+                        so I had to do some research, and in those cases I needed to use Java Buffer Objects like FloatBuffer and DoubleBuffer objects. Regardless,
+                        I am enjoying the experience and the challenges I face make the project more fun when I solve them.
+                </p>
+                <div class = "vid">
+                    <video src="images/Opengl_Vid.mp4" controls></video>
+                </div>
+                <p>
+                    Above is a video of what I have done so far in OpenGL. I followed the tutorial that was previously mentioned, and
+                    I created a few cubes with ambient, diffuse, and specular lighting and/or maps. The light source is the white cube, and
+                    the light emitted off of it is reflected off the metal part of the cubes using a specular map. The green letters is a
+                    texture used as an emmission map, which simulate a glowing effect.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <span>Created By <a href='index.html'>David Ezeude</a> | <span class="far fa-copyright"></span>2021 All rights reserved</span>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

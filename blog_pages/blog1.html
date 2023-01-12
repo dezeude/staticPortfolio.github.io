@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>David's Blog</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='author' content="David Ezeude">
+    <meta name='keywords' content="blog, personal, portfolio, projects">
+    <link rel="icon" href="../images/logo.png" type="image/icon type">
+    <link rel="stylesheet" type ='text/css' href="../style.css">
+    <script src="https://kit.fontawesome.com/bff889b153.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navigation bar start -->
+    <nav id='nav' class = 'navBar'>
+        <div class='max-width'>
+            <a href='index.html' class='logo'>
+                <img src='images/logo.png'></img>
+                Portfo<span>lio.</span>
+            </a>
+                <a href='#about' class='skip-bar'>Skip Navigation</a>
+                <ul class='menu'>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <!-- <li><a href="Blog.html">Blog</a></li> -->
+                    <!-- Blog Coming Soon! -->
+                </ul>
+                <div id='mBtn' class='menu-btn' onclick="menuClick()">
+                    <i id='mBtn-img' class="fas fa-bars"></i>
+                </div>  
+        </div>
+    </nav>
+
+
+    <section class="post">
+        <div class="max-width">
+            <h2 class="title">HTML Canvas Experiments</h2>
+            <div class="post-content">
+                
+                <div class="desc" id="words">
+                    <p>
+                        HTML Canvas is the element that is used to draw 2D or 3D (using <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Tutorial">WebGL</a>) graphics on websites.
+                        This element allows the client script in JavaScript to render shapes, images, lines, text, and more.
+                        To access the canvas' power we must use JavaScript code to render anything we want. The more I researched
+                        about the canvas element, the more I realized how powerful it really is. After seeing multiple implementations
+                        online, I am convinced that canvas is the key to creating unique websites that stand out. This blog post
+                        represents the fruits of my research of the element and what I can do with it.                        
+                    </p> 
+                </div>
+                <canvas id = 'canvas-one'></canvas>
+                <canvas id = 'canvas-two'></canvas>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <span>Created By <a href='index.html'>David Ezeude</a> | <span class="far fa-copyright"></span>2021 All rights reserved</span>
+    </footer>
+</body>
+<script src="script.js"></script>
+<script src="canvas.js"></script>
+</html>
