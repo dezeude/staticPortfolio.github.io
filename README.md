@@ -6,4 +6,6 @@ It used to be live on the domain **ezeude.ca** but not anymore.
 
 You can see what it looked like using the [Wayback Machine](https://web.archive.org/web/20220203153008/http://ezeude.ca/).
 
+Unfortunately the Site Capture doesn't work properly anymore. ;(
+
 Enjoy!
