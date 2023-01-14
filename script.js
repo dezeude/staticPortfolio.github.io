@@ -67,6 +67,8 @@ window.addEventListener("scroll", function(){ // function called when the user s
     
 });
 
+//Check the isinViewport function whenever the user clicks on 
+
 function menuClick(){ // called when the button on the top right of the page is clicked
     let b = document.getElementById('mBtn-img');
     if (isMenuOpen) {
@@ -84,6 +86,8 @@ function menuClick(){ // called when the button on the top right of the page is 
 
 function isInViewport(element) { // function that determines whether an element is on the screen/viewport.
     const rect = element.getBoundingClientRect();
+    // if(element.id == "about")
+        console.log(element.id);
     return (
         rect.top >= 0 &&
         rect.left >= 0 &&
