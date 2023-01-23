@@ -8,4 +8,6 @@ You can see what it looked like using the [Wayback Machine](https://web.archive.
 
 Unfortunately the Site Capture doesn't work properly anymore. ;(
 
+But you can see the live site on [Github Pages](https://dezeude.github.io/staticPortfolio.github.io/)
+
 Enjoy!
