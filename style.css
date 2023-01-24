@@ -161,6 +161,7 @@ section{
     font-family: 'Ubuntu', sans-serif;
     padding: 5vh 0 5vh 0;
     height: 100vh;
+    max-height: 1000px;
 }
 
 /*menu btn styling*/
@@ -317,6 +318,8 @@ section .column{
 }
 
 .about .about-content .left{
+    border-collapse: collapse;
+    border-radius: 12px;
     opacity: 0;
 }
 
@@ -331,8 +334,7 @@ section .column{
     height: 350px;
     width: 90%;
     object-fit: contain;
-    border-collapse: collapse; 
-    border-radius: 12px;
+    border-radius: 20px;
 }
 
 .about .about-content .right{
