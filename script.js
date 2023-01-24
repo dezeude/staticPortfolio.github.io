@@ -87,7 +87,7 @@ function menuClick(){ // called when the button on the top right of the page is 
 function isInViewport(element) { // function that determines whether an element is on the screen/viewport.
     const rect = element.getBoundingClientRect();
     // if(element.id == "about")
-        console.log(element.id);
+//         console.log(element.id);
     return (
         rect.top >= 0 &&
         rect.left >= 0 &&
