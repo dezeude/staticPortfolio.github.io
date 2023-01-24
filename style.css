@@ -107,6 +107,7 @@ a.more:hover{
     background: crimson;
 }
 .navBar .max-width{
+    max-width: 1300px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -177,6 +178,7 @@ section{
     background-position: center;
     background-attachment: fixed;
     background-position: right top;
+    background-size: 100%;
     width: 100vw;
     height: 100vh; 
     color: white;
