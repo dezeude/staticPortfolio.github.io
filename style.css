@@ -159,7 +159,8 @@ section{
     /* padding-top: 100px;
     padding-bottom: 100px; */
     font-family: 'Ubuntu', sans-serif;
-    padding: 200px 0;
+    padding: 5vh 0 5vh 0;
+    height: 100%;
 }
 
 /*menu btn styling*/
@@ -174,10 +175,9 @@ section{
     display: flex;
     background-image: url("images/MoiLong.png");
     background-repeat: no-repeat;
-    background-position: center;
     background-attachment: fixed;
     background-position: right top;
-    background-size: 100%;
+    background-size: cover;
     width: 100vw;
     height: 100vh; 
     color: white;
