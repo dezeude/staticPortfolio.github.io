@@ -12,13 +12,12 @@
     <link rel="icon" href="images/logo.png" type="image/icon type">
     <link rel="stylesheet" type ='text/css' href="style.css">
     <script src="https://kit.fontawesome.com/bff889b153.js" crossorigin="anonymous"></script>
-   
 </head>
 <body>
     <nav id='nav' class='navBar'>
         <div class='max-width'>
             <a href='index.html' class='logo'>
-                <img src='images/logo.png'></img>
+                <img id="navLogo" src='images/logo.png'></img>
                 Portfo<span>lio.</span>
             </a>
                 <a href='#about' class='skip-bar'>Skip Navigation</a>
@@ -30,8 +29,8 @@
                     <li><a href="#contact">Contacts</a></li>
                     <li><a href="blog_pages/blog.html">Blog</a></li>
                 </ul>
-                <div id='mBtn' class='menu-btn' onclick="menuClick()">
-                    <i id='mBtn-img' class="fas fa-bars"></i>
+                <div id='mBtn' class='menu-btn' onclick="menuClick(this)">
+                    <i id='mBtn-img' class="fas fa-times"></i>
                 </div>
                 
         </div>
@@ -208,7 +207,7 @@
                             <i class="fas fa-envelope"></i>
                             <div class="info">
                                     <div class="head">Email</div>
-                                <div class="sub-title">David.Ezeude@sac.on.ca</div>
+                                <div class="sub-title">DavidKOS1738@gmail.com</div>
                             </div>
                         </div>
 
@@ -233,7 +232,7 @@
                            </div>
 
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message..." placeholder="Description"></textarea>
+                            <textarea cols="30" rows="10" placeholder="Message..."></textarea>
                         </div>
                         <div class="button">
                             <a href="#contacts" class="more" onclick="emailClick()">Send Message</a>
@@ -257,16 +256,17 @@
                         I try to upload frequently, but no promises😅. In my blogs, I talk about games
                         I've been developing, other things I've been coding, and anything code related in my life. 
                     </p>
-                    <a href="blog.html" class="more">Read More</a>
+                    <a href="blog_pages/blog.html" class="more">Read More</a>
                 </div>
                 <div class="column right"></div>
             </div>
         </div>
     </section>
     <!-- footer section start -->
-    <footer>
-        <span>Created By <a href='index.html'>David Ezeude</a> | <span class="far fa-copyright"></span>2021 All rights reserved</span>
-    </footer>
+        <footer>
+            <span>Created By <a href='index.html'>David Ezeude</a> | <span class="far fa-copyright"></span>2021 All rights reserved</span>
+            <button onclick="changeThemeToUNC()">Change Theme</button>
+        </footer>
 
 </body>
 <script src='script.js'></script>
