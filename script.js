@@ -141,14 +141,15 @@ function changeThemeToUNC() {
     document.documentElement.style.setProperty("--secondary-color", "#13294b");
     document.documentElement.style.setProperty("--tertiary-color", "cyan");
     document.getElementById("navLogo").src = "images/unc-logo.png";
-
+    document.getElementById("school-name").href = "https://www.unc.edu";
     theme = "UNC";
   } else if (theme === "UNC") {
     document.documentElement.style.setProperty("--primary-color", "crimson");
     document.documentElement.style.setProperty("--secondary-color", "black");
     document.documentElement.style.setProperty("--tertiary-color", "white");
     document.getElementById("navLogo").src = "images/logo.png";
+    document.getElementById("school-name").href = "https://www.sac.on.ca/";
     theme = "SAC";
   }
-  console.log("Changed Theme!");
+  document.getElementById("school-name").innerText = theme;
 }
