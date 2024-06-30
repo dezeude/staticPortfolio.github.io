@@ -224,7 +224,7 @@
                             </div>
 
                             <div class="field email">
-                                <input type="text" placeholder="Email">
+                                <input type="text" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="field subject">
@@ -232,13 +232,16 @@
                            </div>
 
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message..."></textarea>
+                            <textarea cols="30" rows="10" placeholder="Message..." required></textarea>
                         </div>
                         <div class="button">
-                            <a href="#contacts" class="more" onclick="sendEmail()">Send Message</a>
+                            <a href="#contacts" class="more" onclick="submitForm()">Send Message</a>
                         </div>
-                        
                     </form>
+                    <div id="cFormSubmit" style="display: none;">
+                        <i class="fas fa-solid fa-check"></i>
+                        <div class="msg">Email Sent</div>
+                    </div>
                 </div>
             </div>
         </div>

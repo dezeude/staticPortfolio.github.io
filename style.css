@@ -690,6 +690,33 @@ section .column {
   height: 100%;
 }
 
+#cFormSubmit {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  display: none;
+  flex-direction: column;
+}
+
+#cFormSubmit * {
+  color: var(--secondary-color);
+  font-size: 18vh;
+  margin: auto;
+}
+
+#cFormSubmit .msg {
+  color: var(--tertiary-color);
+  font-size: 10vh;
+}
+
+#cFormSubmit.reveal * {
+  animation: fadeAnimation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  opacity: 1;
+}
+
 /* blog home section Styling*/
 .home-blog {
   background: var(--secondary-color);

@@ -143,3 +143,16 @@ function changeThemeToUNC() {
   }
   document.getElementById("school-name").innerText = theme;
 }
+
+function submitForm() {
+  console.log("Form submitted");
+  sendEmail();
+  //delete column right children
+  let messageEl = document.getElementById("cFormSubmit");
+  let dup = messageEl.cloneNode(true);
+
+  let colRight = document.querySelector("#contact .column.right");
+  colRight.replaceChildren(dup);
+  dup.style.display = "flex";
+  dup.classList.add("reveal");
+}
