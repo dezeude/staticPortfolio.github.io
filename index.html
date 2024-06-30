@@ -215,7 +215,7 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
+                    <form id="contact-form" action="#">
                         <!-- Form Start -->
                         <div class="fields">
 
@@ -235,7 +235,7 @@
                             <textarea cols="30" rows="10" placeholder="Message..."></textarea>
                         </div>
                         <div class="button">
-                            <a href="#contacts" class="more" onclick="emailClick()">Send Message</a>
+                            <a href="#contacts" class="more" onclick="sendEmail()">Send Message</a>
                         </div>
                         
                     </form>
@@ -270,4 +270,8 @@
 
 </body>
 <script src='script.js'></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript" src="send.js"></script>
 </html>

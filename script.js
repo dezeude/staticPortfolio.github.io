@@ -124,16 +124,6 @@ function isInViewport(element) {
   );
 }
 
-function emailClick() {
-  let name = document.querySelector(".name input").value;
-  let email = document.querySelector(".email input").value;
-  let subject = document.querySelector(".subject input").value;
-  let message = document.querySelector(".textarea textarea").value;
-  window.open(
-    "mailto:DavidKOS1738@gmail.com?subject=" + subject + "&body=" + message
-  );
-  // console.log(name);
-}
 let theme = "SAC";
 function changeThemeToUNC() {
   if (theme === "SAC") {
